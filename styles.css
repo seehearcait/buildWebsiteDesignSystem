@@ -3,31 +3,57 @@ body {
     border: dimgray solid 0px;
     font-size: 17px;
     font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    top: 0;
 }
 
-
 h1, h2 {
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 .flexbox-center {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid dimgray;
-    /* justify-content: center; */
+    /* border: 1px solid dimgray; */
+    border-top: 1px;
+    justify-content: center;
 
 }
 
 .flexbox-left {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content:left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border: 1px solid dimgray; */
+    align-content: center;
+    /* justify-content: space-around; */
+    margin: 0 auto;
 }
 
 /**     HEADER      **/
+header {
+    position: relative;
+    padding-top: 1em;
+    width: 100%;
+    background-color: #dad1c2;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #cedadf;
+}
+
 header h1 {
     font-family: Monoton;
     letter-spacing: 2px;
@@ -35,11 +61,23 @@ header h1 {
     font-size: 50px;
 }
 
-header li {
+nav li {
     display: inline-block;
+    padding: 0 10px;
+    border: 1px solid black;
 }
 
-/**  Colors  **/
+/**        MAIN     **/
+main {
+    position: relative; 
+}
+
+.title {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/**     COLORS      **/
 .colorbox {
     margin: 20px;
     min-height: 100px;
@@ -65,7 +103,11 @@ header li {
     text-transform: uppercase;
 }
 
-#primary {
+#colors .title {
+    background-color: #f0ede7;    
+}
+
+.primary {
     text-align: center;
     flex-direction: row;
     margin-bottom: 10%;  
@@ -74,99 +116,101 @@ header li {
 }
 
 /* Tan */
-#tan #primary {
+.tan .primary {
     background-color: #dad1c2;
 }
 
-#tan #tint1 {
+.tan .tint1 {
     background-color: #e1dace;
 }
 
-#tan #tint2 {
+.tan .tint2 {
     background-color: #e9e3da;
 }
 
-#tan #tint3 {
+.tan .tint3 {
     background-color: #f0ede7;
 }
 
-#tan #tint4 {
+.tan .tint4 {
     background-color: #f8f6f3;
 }
 
 /* Teal */
-#teal #primary {
+.teal .primary {
     background-color: #648a99;
 }
 
-#teal #tint1 {
+.teal .tint1 {
     background-color: #7b9ca9;
 }
 
-#teal #tint2 {
+.teal .tint2 {
     background-color: #93aeb8;
 }
 
-#teal #tint3 {
+.teal .tint3 {
     background-color: #abc0c8;
 }
 
-#teal #tint4 {
+.teal .tint4 {
     background-color: #cedadf;
 }
 
 /* Green */
-#green #primary {
+.green .primary {
     background-color: #77a565;
 }
 
-#green #tint1 {
+.green .tint1 {
     background-color: #85ae75;
 }
 
-#green #tint2 {
+.green .tint2 {
     background-color: #93b885;
 }
 
-#green #tint3 {
+.green .tint3{
     background-color: #a2c195;
 }
 
-#green #tint4 {
+.green .tint4 {
     background-color: #cedfc8;
 }
 /* Orange */
-#orange #primary {
+.orange .primary {
     background-color: #e27c51;
 }
 
-#orange #tint1 {
+.orange .tint1 {
     background-color: #e68c67;
 }
 
-#orange #tint2 {
+.orange .tint2{
     background-color: #e99d7d;
 }
 
-#orange #tint3 {
+.orange .tint3{
     background-color: #edad93;
 }
 
-#orange #tint4 {
+.orange .tint4 {
     background-color: #f6d5c7;
 }
 
 /** FONTS **/
 .fontbox {
     padding-left: 7px;
-    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
     min-height: 100px;
     min-width: 20%;
     border-left: 2px solid;
+    text-align: left;
+    align-items: center;
 }
 
 .fontlabel {
-    font-size: 48px;
+    font-size: 1.75em;
 }
 
 .fontbox .italic {
@@ -195,4 +239,15 @@ header li {
 
 #roboto .bold {
     font-weight: 400;
+}
+
+/**     TEXT STYLES     **/
+.textbox {
+    padding-left: 7px;
+    margin-top: 20px;
+    min-height: 100px;
+    min-width: 20%;
+    border-left: 2px solid;
+    text-align: left;
+    align-items: center;
 }
