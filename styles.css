@@ -4,11 +4,16 @@ html {
     font-size: 16px;
 }
 
+li{
+    display: inline-block;
+}
+
 .flexbox-center {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    border: 1px solid dimgray;
+    /* justify-content: center; */
 
 }
 
@@ -31,7 +36,6 @@ html {
     display: block;
     height: 50px;
     width: 100px;
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -89,6 +93,7 @@ html {
     background-color: #cedadf;
 }
 
+/* Green */
 #green #primary {
     background-color: #77a565;
 }
@@ -107,4 +112,24 @@ html {
 
 #green #tint4 {
     background-color: #cedfc8;
+}
+/* Orange */
+#orange #primary {
+    background-color: #e27c51;
+}
+
+#orange #tint1 {
+    background-color: #e68c67;
+}
+
+#orange #tint2 {
+    background-color: #e99d7d;
+}
+
+#orange #tint3 {
+    background-color: #edad93;
+}
+
+#orange #tint4 {
+    background-color: #f6d5c7;
 }
