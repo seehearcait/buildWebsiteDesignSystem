@@ -75,13 +75,8 @@ header {
 
 nav li {
     display: inline-block;
-    padding: 0 10px;
-    border-radius: 15px;
-}
-
-nav li:hover{
-    color: #648A99;
-    background-color: #cedadf;
+    /* padding: 0 10px;
+    border-radius: 15px; */
 }
 
 nav a:link, a:visited {
@@ -89,9 +84,6 @@ nav a:link, a:visited {
     text-decoration: none;
 }
 
-nav a:hover {
-    color:#648A99
-}
 
 /**        MAIN     **/
 .title {
@@ -184,7 +176,7 @@ a.anchor {
 
 /* Green */
 .green .primary {
-    background-color: #77a565;
+    background-color: #547846;
 }
 
 .green .tint1 {
@@ -292,19 +284,108 @@ a.anchor {
 /**     BUTTONS     **/
 /* Navigation */
 .buttonbox {
+    margin: 20px;
+    /* width: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: transparent; */
 }
 
-.button {
-   border-radius: 25%; 
-   padding: 0 10px;
+.button, .navbutton, .buttonorange_light, .buttonorange_dark, .buttonorange_clear , .buttonteal_light, .buttonteal_dark, .buttongreen_clear, .buttongreen_light, .buttongreen_dark{
+   border-radius: 15px; 
+   padding: 5px 20px;
 }
-
-#navbutton {
+/* Teal Buttons */
+.navbutton {
     color: #46606B;
     border: 1px #cedadf solid;
 }
 
-#navbutton:hover{
+.navbutton:hover{
     color: #648A99;
     background-color: #cedadf;
+}
+
+.buttonteal_light {
+    background-color: #cedadf;
+    color: #46606b;
+}
+
+.buttonteal_light:hover{
+    color: white;
+    background-color: #46606b;
+}
+
+.buttonteal_dark {
+    color: white;
+    background-color: #46606b;
+    /* border: 1px #cedadf solid; */
+}
+
+.buttonteal_dark:hover{
+    color: black;
+    background-color: #cedadf;
+}
+/* Green Buttons */
+.buttongreen_clear {
+    color: #547846;
+    border: 1px #cedfc8 solid;
+}
+
+.buttongreen_clear:hover{
+    color: #547846;
+    background-color: #cedfc8;
+}
+
+.buttongreen_light {
+    background-color: #cedfc8;
+    color: #547846;
+}
+
+.buttongreen_light:hover{
+    color: white;
+    background-color: #547846;
+}
+
+.buttongreen_dark {
+    color: white;
+    background-color: #547846;
+}
+
+.buttongreen_dark:hover{
+    color: black;
+    background-color: #cedfc8;
+}
+
+/* Orange Buttons */
+.buttonorange_clear {
+    color: #46606B;
+    border: 1px #f6d5c7 solid;
+}
+
+.buttonorange_clear:hover{
+    color: #e27c51;
+    background-color: #f6d5c7;
+}
+
+.buttonorange_light {
+    background-color: #f6d5c7;
+    color: #e27c51;
+}
+
+.buttonorange_light:hover{
+    color: white;
+    background-color: #e27c51;
+}
+
+.buttonorange_dark {
+    color: white;
+    background-color: #e27c51;
+    /* border: 1px #cedadf solid; */
+}
+
+.buttonorange_dark:hover{
+    color: black;
+    background-color: #f6d5c7;
 }
