@@ -1,12 +1,15 @@
 /* Universal Styles */
-
-html {
-    font-size: 16px;
+body {
+    border: dimgray solid 0px;
+    font-size: 17px;
 }
 
-li{
-    display: inline-block;
+h1 {
+    font-family: Monoton;
+    font-size: 48px;
+    font-weight: 300;
 }
+
 
 .flexbox-center {
     display: flex;
@@ -15,6 +18,18 @@ li{
     border: 1px solid dimgray;
     /* justify-content: center; */
 
+}
+
+.flexbox-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:left;
+}
+
+/**     HEADER      **/
+header li {
+    display: inline-block;
 }
 
 /**  Colors  **/
@@ -132,4 +147,45 @@ li{
 
 #orange #tint4 {
     background-color: #f6d5c7;
+}
+
+/** FONTS **/
+.fontbox {
+    padding-left: 7px;
+    margin: 20px 20px 20px 20px;
+    min-height: 100px;
+    min-width: 20%;
+    border-left: 2px solid;
+}
+
+.fontlabel {
+    font-size: 48px;
+}
+
+.fontbox .italic {
+    font-style: italic;
+}
+
+/* Monoton */
+#monoton {
+    font-family: "Monoton";
+}
+
+/* Open Sans */
+#opensans {
+    font-family: "Open Sans";
+}
+
+#opensans .bold {
+    font-weight: 700;
+}
+
+/* Roboto */
+#roboto {
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+#roboto .bold {
+    font-weight: 400;
 }
