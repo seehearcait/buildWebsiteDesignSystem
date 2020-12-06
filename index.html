@@ -11,17 +11,17 @@
     </head>
     <body>
         <header>
-            <h1>My First Style Guide</h1>
+            <nav>
+                <ul>
+                    <li><a href="#target-colors">Colors</a></li>
+                    <li><a href="#target-fonts">Fonts</a></li>
+                    <li><a href="#target-text">Text Styles</a></li>
+                    <li><a href="#target-buttons">Buttons</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="#target-colors">Colors</a></li>
-                <li><a href="#target-fonts">Fonts</a></li>
-                <li><a href="#target-text">Text Styles</a></li>
-                <li><a>Buttons</a></li>
-            </ul>
-        </nav>
         <main>
+            <h1 id="pagetitle">My First Style Guide</h1>
             <a class="anchor" name="target-colors"></a>
             <section id="colors">
                 <h1 class="title">Colors</h1>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="color-info">
                             <p class="color-label">Teal</p>
-                            <p class="color-hex">#648a99</p>
+                            <p class="color-hex">#46606b</p>
                         </div>
                         <div class="color-scale tint1"></div>
                         <div class="color-scale tint2"></div>
@@ -99,46 +99,49 @@
                 </div>
             </section>
             <a class="anchor" name="target-text"></a>
-            <section>
+            <section id="text">
                 <h1 class="title">Text Styles</h1>
                 <div class="flexbox-left">
                     <div class="textbox">
-                        <h1>H1: Main page heading</h1>
+                        <h1 id="pagetitle" class="texttype">Page Title</h1>
                         <ul>
-                            <li>Font-weight: 700 (bold)</li>
-                            <li>Font-size: 26px</li>
-                            <li>
-                                Font-family: Nunito Sans
-                            </li>
+                            <li>Font-Weight: 400</li>
+                            <li>Font-Size: 50px</li>
+                            <li>Font-Family: Monoton</li>
                         </ul>
-                        <h2>
-                            H2: Subheading
-                        </h2>
+                    </div>
+                    <div class="textbox">
+                        <h1 class="texttype">H1: Main Section Heading</h1>
                         <ul>
-                            <li>
-                                Font-weight: 500
-                            </li>
-                            <li>
-                                Font-size: 18px
-                            </li>
-                            <li>
-                                Font-family: Poppins
-                            </li>
+                            <li>Font-Weight: 300</li>
+                            <li>Font-Size: 34px</li>
+                            <li>Font-Family: Roboto</li>
                         </ul>
-                        <p>
-                            P: Paragraph text
-                        </p>
+                    </div>
+                    <div class="textbox">
+                        <h2 class="texttype">H2: Sub Section Heading</h2>
                         <ul>
-                            <li>
-                                Font-weight: 400 (regular)
-                            </li>
-                            <li>
-                                Font-size: 14px
-                            </li>
-                            <li>
-                                Font-family: Times-New-Roman
-                            </li>
+                            <li>Font-Weight: 400</li>
+                            <li>Font-Size: 24px</li>
+                            <li>Font-Family: Open Sans</li>
                         </ul>
+                    </div>
+                    <div class="textbox">
+                        <p class="texttype">P: Paragraph</p>
+                        <ul>
+                            <li>Font-Weight: 300</li>
+                            <li>Font-Size: 16px</li>
+                            <li>Font-Family: Roboto</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <a class="anchor" name="target-buttons"></a>
+            <section id="buttons">
+                <h1 class="title">Buttons</h1>
+                <div class="flexbox-center">
+                    <div class="buttonbox">
+                        <p class="button" id="navbutton">Nav Option</p>
                     </div>
                 </div>
             </section>
