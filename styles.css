@@ -2,14 +2,14 @@
 body {
     border: dimgray solid 0px;
     font-size: 17px;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
-h1 {
-    font-family: Monoton;
-    font-size: 48px;
-    font-weight: 300;
-}
 
+h1, h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
 
 .flexbox-center {
     display: flex;
@@ -28,6 +28,13 @@ h1 {
 }
 
 /**     HEADER      **/
+header h1 {
+    font-family: Monoton;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 50px;
+}
+
 header li {
     display: inline-block;
 }
